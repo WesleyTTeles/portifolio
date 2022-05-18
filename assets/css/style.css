@@ -1,17 +1,224 @@
-*{
+:root{
+    --background-color: #000036;
+    --primary-color: #7562E0;
+    --color-bar: #181824;
+    --box-color: #BDBDBD;
+    --input-color: #F5F5F5;
+    --text-color-dark: #fff;
+}
+body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: var(--background-color);
 }
-main{
+/* >>>>>>>>>>>>> Inicio do Header <<<<<<<<<<<<<<< */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-bar);
+    width: 100%;
+    height: 70px;
+}
+.logo-wt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+.logo-wt img {
+    width: 50px;
+}
+.logo-wt span {
+    color: var(--text-color-dark);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    margin-left: 5px;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+li {
+    list-style: none;
+}
+li a {
+    color: var(--text-color-dark);
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-weight: 300;
+    margin: 8px;
+}
+.dark-mode {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
+    height: 35px;
+    border: solid 1px #fff;
+    border-radius: 60px;
+    cursor: pointer;
+    position: relative;
+}
+.fa-sun {
+    color: goldenrod;
+}
+.fa-moon {
+    color: #fff;
+}
+
+/* >>>>>>>>>>>>> Inicio do Section home <<<<<<<<<<<<<<< */
+
+#home {
+    display: flex;
+    width: 100%;
+    height: auto;
+    line-height: 1;
+}
+.left-side {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh;
+    flex: 1;
+    
+    
 }
-h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom: 20px;
+.left-side h1 {
+    color: var(--text-color-dark);
+    font-family: 'Poppins', sans-serif;
+    text-align:left;
+    font-weight: 300;
+    width: 60%;
+    font-size: 3.5rem;
+    
+}
+strong {
+    color: var(--primary-color);
+}
+.left-side p {
+    color: var(--text-color-dark);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 0.9rem;
+    width: 60%;
+    margin: 20px 0 30px 0;
+}
+.right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    
+}
+.right-side img {
+    width: 80%;
+    height: auto;
+}
+
+/* >>>>>>>> Botoes <<<<<<<<<< */
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whatsapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.whatsapp a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color-dark);
+    font-weight: 300;
+    font-size: 0.9;
+}
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+}
+.projects a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color-dark);
+    font-weight: 300;
+    font-size: 0.9;
+}
+
+/* >>>>>>>> Inicio do Sobre Mim <<<<<<<<<< */
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    
+}
+#about h2 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: end;
+    margin: 50px 0 10px 0;
+    margin-left: -1015px;
+}
+#about p {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color-dark);
+    font-weight: 300;
+    font-size: 0.9rem;
+    text-align: justify;
+    width: 79%;
+}
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.skills h2 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin: 50px 0 20px 0;
+}
+.icon-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.icon-skills img {
+    width: 90px ;
+    margin: 20px;
+    padding: 20px;
 }

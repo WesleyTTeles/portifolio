@@ -4,18 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/327102260c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Wesley Teles</title>
 </head>
 <body>
-    <main>
-        <h1>Agende seus atendimentos aqui!</h1>
-        <iframe src="https://calendar.google.com/calendar/embed?src=kdp5unh4j94u2ulmml67hrgn5s%40group.calendar.google.com&ctz=America%2FFortaleza" 
-        style="border: 0" width="600" height="400" frameborder="0" scrolling="no">
-        </iframe>
-
-    </main>
-    
+   <header>
+            <!-- Icone -->
+        <div class="logo-wt">
+            <img src="assets/img/WT (1).png" alt="tela do monitor com as letras WT">
+            <span>Wesley Teles</span>
+        </div>  
+        <!-- Menu de Navegacao -->
+        <div class="menu">
+            <nav>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre mim</a></li>
+                <li><a href="">Projetos</a></li>
+                <li><a href="">Contato</a></li>
+                <li><a href="">Feedbacks</a></li>
+            </nav>
+            <!-- botao Light e Dark mode -->
+            <div class="dark-mode">
+                <input type="checkbox" name="check" id="btn-mode">
+                <label for="btn-mode">
+                    <i class="fa-solid fa-sun fa-1x"></i>
+                    <i class="fa-solid fa-moon fa-1x"></i>
+                </label>
+            </div>
+        </div>
+   </header>
+   <section>
+        <div id="home">
+            <!-- Lado Esquerdo da pagina -->
+            <div class="left-side">
+                <h1>Olá, sou <br> 
+                    <strong>Wesley Teles</strong> 
+                </h1>
+                <p>Contrary to popular belief, Lorem Ipsum is not 
+                    simply random text. It has roots in a piece of classical.
+                </p>
+                <div class="buttons">
+                    <div class="whatsapp">
+                        <a href="">whatsapp</a>
+                    </div>
+                    <div class="projects">
+                        <a href="">Projetos ➁</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Lado direito da pagina -->
+            <div class="right-side">
+                <img src="assets/img/dev.png" alt="">
+            </div>
+       </div>
+    </section>
+    <section>
+        <div id="about">
+            <h2>Sobre mim</h2>
+            <p>
+                Olá, Me chamo Wesley Teles, atualmente graduando em Analise e Desenvolvimento de Sistema e atuando como desenvolvedor front-end.
+                Desenvolvi projetos para empresas de médio e grande porte como também, atuo como gerente de projetos fazendo a ponte entre o cliente e o desenvolvedor, auxiliando ao cliente a ter o projeto de acordo com as suas necessidades e demandas.
+                Meu propósito é ajudar o cliente ter o seu projeto de forma eficiente e rápida utilizando oque tem de melhor no mercado da tecnologia.
+            </p>
+        </div>
+        <div class="skills">
+            <h2>Tecnologias que Tenho habilidades</h2>
+            <div class="icon-skills">
+                <img src="assets/img/html.png" alt="icone do HTML">
+                <img src="assets/img/css-3.png" alt="icone do css">
+                <img src="assets/img/js.png" alt="icone do javascript">
+                <img src="assets/img/wordpress.png" alt="icone do wordpress">
+                <img src="assets/img/figma.png" alt="icone do figma">
+            </div>
+        </div>
+    </section>
 
 
 </body>

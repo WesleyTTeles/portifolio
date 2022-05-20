@@ -17,3 +17,20 @@ function start() {
 }
 window.addEventListener("load", start)
 
+//Funcao para quando o usuario fora do alcance do menu ele possa clicar e ir para o top
+function up() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+// funcao para mostrar o botao quando chegar em uma determinada posicao
+function showButtonTop(){
+    if(window.scrollY === 0){
+        document.querySelector('#btn--up').style.display = 'none'
+    }
+    else {
+        document.querySelector('#btn--up').style.display = 'block'
+    }
+}
+window.addEventListener('scroll', showButtonTop);

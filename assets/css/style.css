@@ -30,12 +30,12 @@ header {
 .logo-wt img {
     width: 50px;
 }
-.logo-wt span {
+/* .logo-wt span {
     color: var(--text-color-dark);
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     margin-left: 5px;
-}
+} */
 .menu {
     display: flex;
     justify-content: center;
@@ -241,8 +241,9 @@ strong {
     font-size: 1.5rem;
     margin: 40px 0 20px 0;
 }
-.conteiner {
+.conteiner--projects {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -339,13 +340,20 @@ strong {
 }
 
 /* >>>>>>>>>>> Contato <<<<<<<<<< */
-
 #contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteiner--contact{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    align-self: baseline;
     width: 100%;
+    max-width: 1410px;
     height: auto;
     margin: 100px 0 60px 0;
 }
@@ -378,13 +386,13 @@ strong {
 }
 .fa-github, 
 .fa-instagram,
-.fa-envelope {
+.fa-whatsapp {
     color: var(--primary-color);
     margin: 5px;
 }
 .fa-github:hover, 
 .fa-instagram:hover,
-.fa-envelope:hover {
+.fa-whatsapp:hover {
     color: var(--text-color-dark);
 }
 .left-contact a {
@@ -447,7 +455,20 @@ textarea{
     font-size: 0.8rem;
     
 }
-
+/* >>>>>>>>>>> Botao para voltar ao menu <<<<< */
+div#btn--up{
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+    z-index: 999;
+    transition: .5s;
+    display: none;
+}
+#btn--up img {
+    width: 30px;
+    transform: rotate(270deg);
+    cursor: pointer;
+}
 /* >>>>>>>>> Rodape <<<<<<< */
 
 footer{

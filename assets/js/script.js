@@ -34,3 +34,12 @@ function showButtonTop(){
     }
 }
 window.addEventListener('scroll', showButtonTop);
+
+// Botao darkmode
+
+const html = document.querySelector('html')
+const checkbox = document.querySelector('#btn-mode')
+
+checkbox.addEventListener('change', function(){
+    html.classList.toggle('dark-mode-active')
+})

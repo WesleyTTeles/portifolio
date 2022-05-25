@@ -4,8 +4,23 @@
     --color-bar: #181824;
     --box-color: #BDBDBD;
     --input-color: #F5F5F5;
-    --text-color-dark: #fff;
+    --text-color: #fff;
+    --btn-color: #fff;
+    --placeholder-color: #000;
+  
+    
 }
+.dark-mode-active:root{
+    --background-color: #fff;
+    --primary-color: #7562E0;
+    --color-bar: #c4c4c4;
+    --box-color: #BDBDBD;
+    --input-color: #7562e08f;
+    --text-color: #7562E0;
+    --btn-color: #fff;
+    --placeholder-color:#fff;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -57,7 +72,7 @@ li {
     list-style: none;
 }
 li a {
-    color: var(--text-color-dark);
+    color: var(--text-color);
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     font-weight: 300;
@@ -65,22 +80,46 @@ li a {
 }
 .dark-mode {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 80px;
-    height: 35px;
+    width: 70px;
+    height: 30px;
+    background-color: var(--primary-color);
     border: solid 1px #fff;
     border-radius: 60px;
     cursor: pointer;
     position: relative;
 }
 .fa-sun {
+    cursor: pointer;
     color: goldenrod;
 }
 .fa-moon {
+    cursor: pointer;
     color: #fff;
 }
+.ball {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    background-color: #c4c4c4;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+#btn-mode:checked + .ball {
+    transform: translateX(35px);
+}
+.label {
+    display: flex;
+    width: 100%;
+    margin: 5px;
+    justify-content: space-between;
+}
 #btn-mode{
+    background-color: tomato;
+    display: none;
+    cursor: pointer;
     width: 10px;
 }
 /* >>>>>>>>>>>>> Inicio do Section home <<<<<<<<<<<<<<< */
@@ -99,7 +138,7 @@ li a {
     flex: 1;
 }
 .left-side h1 {
-    color: var(--text-color-dark);
+    color: var(--text-color);
     font-family: 'Poppins', sans-serif;
     text-align:left;
     font-weight: 300;
@@ -112,7 +151,7 @@ strong {
     color: var(--primary-color);
 }
 .left-side p {
-    color: var(--text-color-dark);
+    color: var(--text-color);
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
     font-size: 0.9rem;
@@ -153,7 +192,7 @@ strong {
 .whatsapp a {
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    color: var(--text-color-dark);
+    color: var(--btn-color);
     font-weight: 300;
     font-size: 0.9;
 }
@@ -170,7 +209,7 @@ strong {
 .projects a {
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    color: var(--text-color-dark);
+    color: var(--text-color);
     font-weight: 300;
     font-size: 0.9;
 }
@@ -197,7 +236,7 @@ strong {
 }
 #about p {
     font-family: 'Poppins', sans-serif;
-    color: var(--text-color-dark);
+    color: var(--text-color);
     font-weight: 300;
     font-size: 1rem;
     text-align: justify;
@@ -294,7 +333,7 @@ strong {
     align-items: center;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    color: var(--text-color-dark);
+    color: var(--btn-color);
     font-weight: 400;
     font-size: 0.9rem;
     gap: 8px;
@@ -377,7 +416,7 @@ strong {
 }
 .left-contact span {
     font-family: 'Poppins', sans-serif;
-    color: var(--text-color-dark);
+    color: var(--text-color);
     font-weight: 300;
     font-size: 0.8rem;
     margin: 0;
@@ -393,7 +432,7 @@ strong {
 .fa-github:hover, 
 .fa-instagram:hover,
 .fa-whatsapp:hover {
-    color: var(--text-color-dark);
+    color: var(--text-color);
 }
 .left-contact a {
     text-decoration: none;
@@ -436,6 +475,9 @@ input{
     border: none;
     background-color: var(--input-color)
 }
+::placeholder{
+    color: var(--placeholder-color);
+}
 textarea{
     background-color: var(--input-color);
     border: none;
@@ -450,7 +492,7 @@ textarea{
     height: 40px;
     background-color: var(--primary-color);
     font-family: 'Poppins', sans-serif;
-    color: var(--text-color-dark);
+    color: var(--btn-color);
     font-weight: 400;
     font-size: 0.8rem;
     
@@ -482,7 +524,7 @@ footer{
 }
 footer span{
     font-family: 'Poppins', sans-serif;
-    color: var(--text-color-dark);
+    color: var(--text-color);
     font-weight: 400;
     font-size: 0.8rem;
 }

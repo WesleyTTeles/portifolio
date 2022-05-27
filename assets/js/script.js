@@ -1,3 +1,5 @@
+// >>>>>>>> Inicio Carrosel de Imagens <<<<<<<<
+
 let time = 4000,
     currentImagesIndex = 0,
     images = document.querySelectorAll(".slider img")
@@ -17,7 +19,7 @@ function start() {
 }
 window.addEventListener("load", start)
 
-//Funcao para quando o usuario fora do alcance do menu ele possa clicar e ir para o top
+// >>>>>>>> Inicio Funcao para quando o usuario fora do alcance do menu ele possa clicar e ir para o top <<<<<<<<<
 function up() {
     window.scrollTo({
         top: 0,
@@ -35,7 +37,7 @@ function showButtonTop(){
 }
 window.addEventListener('scroll', showButtonTop);
 
-// Botao darkmode
+// >>>>>>>> Inicio Botao darkmode <<<<<<<<<
 
 const html = document.querySelector('html')
 const checkbox = document.querySelector('#btn-mode')
@@ -43,3 +45,35 @@ const checkbox = document.querySelector('#btn-mode')
 checkbox.addEventListener('change', function(){
     html.classList.toggle('dark-mode-active')
 })
+
+
+// >>>>>>> Inicio Srcoll para link interno <<<<<<<<<
+// identificar o clique do usuario
+
+const menuItems = document.querySelectorAll('.menu li a[href^="#"]') // pegando apenas os link interno e nao os externos
+
+// verificar se foi clicado ou nao
+menuItems.forEach(item => {
+    item.addEventListener('click', scrollToIdOnClick);
+})
+
+function scrollToIdOnClick(event) {
+    event.preventDefault(); // Previnir a acao natural de quando clicar no menu ficar como meusite.com/menu
+    const to = getScrollTopByHref(event.target)
+
+    scrollToPositionSmooth(to);
+}
+
+function getScrollTopByHref(element) {
+    const id = element.getAttribute('href') // pegando o atributo 'href'
+    return document.querySelector(id).offsetTop; // setando a distancia do id referente ao topo
+} 
+
+function scrollToPositionSmooth(to) {
+    window.scrollTo({
+        top: to,
+        behavior: "smooth"
+    })
+}
+
+// >>>>>>> FIM Srcoll para link interno <<<<<<<<<

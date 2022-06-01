@@ -76,18 +76,16 @@ function scrollToPositionSmooth(to) {
     })
 }
 
-// >>>>>>> FIM Srcoll para link interno <<<<<<<<<
-
 // Menu Responsivel 
-
 let show = true
-
 const menu = document.querySelector('.menu')
 const menuToggle =document.querySelector('.menu-toggle')
 
 menuToggle.addEventListener('click', () => {
-    document.body.style.overflow = show ? 'hidden' : 'initial'
     menu.classList.toggle('on', show)
     show = !show;
 })
 
+function closeMenu() {
+    teste = menu.classList.remove('on')
+}

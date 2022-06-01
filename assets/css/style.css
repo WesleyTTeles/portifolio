@@ -28,7 +28,6 @@ body {
     box-sizing: border-box;
     background-color: var(--background-color);
 }
-/* >>>>>>>>>>>>> Inicio do Header <<<<<<<<<<<<<<< */
 header {
     display: flex;
     align-items: center;
@@ -119,8 +118,6 @@ li a {
     color: #fff;
 }
 
-/* >>>>>>>>>>>>> Inicio do Section home <<<<<<<<<<<<<<< */
-
 #home {
     display: flex;
     width: 100%;
@@ -133,7 +130,6 @@ li a {
     align-items: center;
     flex-direction: column;
     flex: 1;
-    
 }
 .left-side h1 {
     color: var(--text-color);
@@ -142,8 +138,7 @@ li a {
     font-weight: 300;
     width: 60%;
     font-size: 3.8rem;
-    margin: 0;  
-   
+    margin: 0;
 }
 strong {
     color: var(--primary-color);
@@ -209,8 +204,6 @@ strong {
     height: auto;
 }
 
-/* >>>>>>>> Inicio do Sobre Mim <<<<<<<<<< */
-
 #about-me {
     display: flex;
     justify-content: center;
@@ -260,8 +253,6 @@ strong {
     margin: 20px;
     padding: 20px;
 }
-
-/* >>>>>>>>> Inicio dos Projetos <<<<<<<<<<< */
 
 #projects h2 {
     display: flex;
@@ -337,8 +328,6 @@ strong {
     width: 18px;
 }
 
-/* >>>>>>> Inicio de Feedbacks <<<<<< */
-
 #feedbacks {
     display: flex;
     justify-content: center;
@@ -371,8 +360,6 @@ strong {
 .slider img.selected {
     opacity: 1;
 }
-
-/* >>>>>>>>>>> Contato <<<<<<<<<< */
 
 #contact {
     width: 100%;
@@ -441,7 +428,6 @@ strong {
     align-items: center;
     flex-direction: column;
     flex: 1;
-    
 }
 .rigth-side-contact h2 {
     font-family: 'Poppins', sans-serif;
@@ -488,8 +474,6 @@ strong {
     font-size: 0.8rem;
 }
 
-/* >>>>>>>>>>> Botao para voltar ao menu <<<<< */
-
 #btn--up {
     position: fixed;
     right: 50px;
@@ -502,8 +486,6 @@ strong {
     cursor: pointer;
     color: var(--arrow-color);
 }
-
-/* >>>>>>>>> Rodape <<<<<<< */
 
 footer {
     display: flex;
@@ -519,8 +501,6 @@ footer span {
     font-weight: 400;
     font-size: 0.8rem;
 }
-
-/* >>>>>>>>>>>> RESPONSIVIDADE <<<<<<<<<<<<< */
 
 @media (max-width: 978px) and (min-width: 725px)
 {
@@ -647,7 +627,7 @@ footer span {
     .menu.on .menu-toggle {
         position: absolute;
         right: 50px;
-        top: 15px;
+        top: 20px;
     }
     .menu.on .menu-toggle .one {
         transform: rotate(45deg) translate(7px, 7px);
@@ -671,7 +651,7 @@ footer span {
         line-height: 2;
     }
     .menu.on nav .dark-mode {
-        margin-left: 67px;
+        margin-left: 70px;
     }
     /* Home */
     #home{
@@ -791,7 +771,7 @@ footer span {
     .menu.on .menu-toggle {
         position: absolute;
         right: 50px;
-        top: 15px;
+        top: 20px;
     }
     .menu.on .menu-toggle .one {
         transform: rotate(45deg) translate(7px, 7px);
@@ -815,7 +795,7 @@ footer span {
         line-height: 2;
     }
     .menu.on nav .dark-mode {
-        margin-left: 67px;
+        margin-left: 70px;
     }
 
 
@@ -917,7 +897,6 @@ footer span {
         margin: 6px auto;
         background-color: #fff;
         transition-duration: 0.3s;
-        
     }
     .menu-toggle {
         width: 40px;
@@ -937,7 +916,7 @@ footer span {
     .menu.on .menu-toggle {
         position: absolute;
         right: 50px;
-        top: 15px;
+        top: 20px;
     }
     .menu.on .menu-toggle .one {
         transform: rotate(45deg) translate(7px, 7px);
@@ -961,10 +940,8 @@ footer span {
         line-height: 2;
     }
     .menu.on nav .dark-mode {
-        margin-left: 67px;
+        margin-left: 70px;
     }
-
-
     /* Home */
     #home {
         flex-direction: column;
@@ -996,7 +973,6 @@ footer span {
     #about-me p {
         width: 90%;
     }
-
     #about-me h2,
     .skills h2,
     #projects h2,
@@ -1089,7 +1065,7 @@ footer span {
     .menu.on .menu-toggle {
         position: absolute;
         right: 50px;
-        top: 15px;
+        top: 20px;
     }
     .menu.on .menu-toggle .one {
         transform: rotate(45deg) translate(7px, 7px);
@@ -1113,7 +1089,7 @@ footer span {
         line-height: 2;
     }
     .menu.on nav .dark-mode {
-        margin-left: 67px;
+        margin-left: 70px;
     }
 
 

@@ -473,8 +473,8 @@ strong {
     width: 60%;
 }
 #submit{
-    align-self: flex-start;
-    margin-left: 140px;
+    
+   
     margin-top: 10px;
     width: 20%;
     height: 40px;
@@ -580,7 +580,6 @@ footer span{
     }
 
     /* >>>>>>>>>>> Contato <<<<<<<<<< */
-
     
     .left-side-contact span {
         margin-top: 10px;
@@ -603,7 +602,6 @@ footer span{
         width: 80%;
     }
     #submit{
-        margin-left: 95px;
         width: 50%;
     }
 
@@ -613,7 +611,6 @@ footer span{
         right: 35px;
     }
 }
-
 
 @media (max-width: 725px) and (min-width: 600px)
 {
@@ -696,7 +693,6 @@ footer span{
         width: 80%;
     }
     #submit{
-       margin-left: 118px;
         width: 50%;
         margin-bottom: 50px;
     }
@@ -788,7 +784,6 @@ footer span{
         width: 80%;
     }
     #submit{
-       margin-left: 118px;
         width: 50%;
         margin-bottom: 50px;
     }
@@ -886,7 +881,6 @@ footer span{
         width: 90%;
     }
     #submit{
-       margin-left: 80px;
         width: 50%;
         margin-bottom: 50px;
     }
@@ -903,7 +897,6 @@ footer span{
     .menu {
         display: none;
     }
-
     /* Home */
     #home {
         flex-direction: column;
@@ -984,7 +977,6 @@ footer span{
         width: 90%;
     }
     #submit{
-       margin-left: 80px;
         width: 50%;
         margin-bottom: 50px;
     }

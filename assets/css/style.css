@@ -128,6 +128,7 @@ li a {
     align-items: center;
     flex-direction: column;
     flex: 1;
+    
 }
 .left-side h1 {
     color: var(--text-color);
@@ -135,8 +136,9 @@ li a {
     text-align:left;
     font-weight: 300;
     width: 60%;
-    font-size: 3.5rem;
+    font-size: 3.8rem;
     margin: 0;  
+   
 }
 strong {
     color: var(--primary-color);
@@ -198,7 +200,7 @@ strong {
     flex: 1;
 }
 .right-side img {
-    width: 80%;
+    width: 75%;
     height: auto;
 }
 
@@ -239,13 +241,14 @@ strong {
     color: var(--primary-color);
     font-weight: 300;
     font-size: 1.5rem;
-    margin: 50px 0 20px 0;
+    margin: 50px 0;
 }
 .icon-skills {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .icon-skills img {
     width: 80px ;
@@ -263,7 +266,7 @@ strong {
     color: var(--primary-color);
     font-weight: 300;
     font-size: 1.5rem;
-    margin: 40px 0 20px 0;
+    margin: 50px 0;
 }
 .conteiner--projects {
     display: flex;
@@ -342,7 +345,7 @@ strong {
     color: var(--primary-color);
     font-weight: 400;
     font-size: 1.5rem;
-    margin: 40px 0 40px 0;
+    margin: 50px 0;
 }
 .slider {
     display: flex;
@@ -380,7 +383,7 @@ strong {
     width: 100%;
     max-width: 1410px;
     height: auto;
-    margin: 100px 0 60px 0;
+    margin: 50px 0;
 }
 .left-side-contact {
     display: flex;
@@ -462,11 +465,12 @@ strong {
 .rigth-side-contact ::placeholder{
     color: var(--placeholder-color);
 }
-.rigth-side-contact extarea{
+.rigth-side-contact textarea{
     background-color: var(--input-color);
     border: none;
     border-radius: 10px;
     margin-top: 5px;
+    width: 60%;
 }
 #submit{
     align-self: flex-start;
@@ -513,4 +517,381 @@ footer span{
     color: var(--text-color);
     font-weight: 400;
     font-size: 0.8rem;
+}
+/* >>>>>>>>>>>> RESPONSIVIDADE <<<<<<<<<<<<< */
+
+@media (max-width: 978px) and (min-width: 725px)
+{
+    /* Cabecalho */
+
+    nav ul {
+        margin-right: 20px;
+    }
+    li a {
+        font-size: 1rem;
+    }
+
+    /* Home */
+    .left-side,
+    .right-side{
+        margin-top: 30px;
+    }
+    .left-side h1 {
+        width: 79%;
+        font-size: 2.6rem;
+        margin-left: 30px;
+    }
+    .left-side p {
+        width: 70%;
+    }
+    .whatsapp,
+    .projects {
+        width: 130px;
+    }
+    .whatsapp a,
+    .projects a {
+        font-size: 0.8;
+    }
+    .right-side img {
+        width: 90%;
+    }
+
+   /* Sobre mim */
+
+    #about-me p {
+        width: 90%;
+    }
+    .icon-skills img {
+        width: 70px ;
+        margin: 20px;
+        padding: 8px;
+    }
+    /* Projetos */
+    
+    .box-project{
+        width: 40%;
+    }
+
+    /* >>>>>>> Inicio de Feedbacks <<<<<< */
+
+    .slider {
+        width: 700px;
+        height: 230px;
+    }
+
+    /* >>>>>>>>>>> Contato <<<<<<<<<< */
+
+    
+    .left-side-contact span {
+        margin-top: 10px;
+    }
+    .left-side-contact img {
+        margin: 50px 0 27px;
+    }
+    .left-side-contact h2{
+        margin-top: -55px;
+        font-size: 1.3rem;
+    }
+    .rigth-side-contact h2 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .rigth-side-contact input{
+        width: 80%;
+    }
+    .rigth-side-contact textarea{
+        width: 80%;
+    }
+    #submit{
+        margin-left: 95px;
+        width: 50%;
+    }
+
+    /* >>>>>>>>>>> Botao para voltar ao menu <<<<< */
+
+    #btn--up{
+        right: 35px;
+    }
+}
+
+
+@media (max-width: 725px) and (min-width: 600px)
+{
+    /* Cabecalho */
+    .menu {
+        display: none;
+    }
+
+    /* Home */
+    #home{
+        flex-direction: column;
+    }
+    .left-side,
+    .right-side{
+        margin-top: 30px;
+    }
+    .left-side h1 {
+        text-align: center;
+        width: 100%;
+        font-size: 2.6rem;
+    }
+    .left-side p {
+        text-align: center;
+        width: 70%;
+    }
+    .whatsapp,
+    .projects {
+        width: 130px;
+    }
+    .whatsapp a,
+    .projects a {
+        font-size: 0.8;
+    }
+
+   /* Sobre mim */
+
+    #about-me p {
+        width: 90%;
+    }
+    .icon-skills img {
+        width: 70px ;
+        margin: 10px;
+        padding: 8px;
+    }
+    /* Projetos */
+    
+    .box-project{
+        width: 70%;
+    }
+    /* >>>>>>> Inicio de Feedbacks <<<<<< */
+
+    .slider {
+        width: 500px;
+        height: 180px;
+    }
+
+    /* >>>>>>>>>>> Contato <<<<<<<<<< */
+
+    .conteiner-contact {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .left-side-contact span {
+        margin-top: 10px;
+    }
+    .left-side-contact img {
+        margin: 50px 0 27px;
+    }
+    .left-side-contact h2{
+        font-size: 1.5rem;
+    }
+    .rigth-side-contact h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .rigth-side-contact input{
+        width: 80%;
+    }
+    .rigth-side-contact textarea{
+        width: 80%;
+    }
+    #submit{
+       margin-left: 118px;
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    /* >>>>>>>>>>> Botao para voltar ao menu <<<<< */
+
+    #btn--up{
+        right: 35px;
+    }
+}
+
+@media (max-width: 600px) and (min-width: 425px)
+{
+    /* Cabecalho */
+    .menu {
+        display: none;
+    }
+
+    /* Home */
+    #home {
+        flex-direction: column;
+    }
+    .left-side,
+    .right-side{
+        margin-top: 30px;
+    }
+    .left-side h1 {
+        text-align: center;
+        width: 100%;
+        font-size: 2.6rem;
+    }
+    .left-side p {
+        text-align: center;
+        width: 70%;
+    }
+    .whatsapp,
+    .projects {
+        width: 130px;
+    }
+    .whatsapp a,
+    .projects a {
+        font-size: 0.8;
+    }
+
+   /* Sobre mim */
+
+    #about-me p {
+        width: 90%;
+    }
+    .icon-skills img {
+        width: 50px ;
+        margin: 10px;
+        padding: 8px;
+    }
+    /* Projetos */
+    
+    .box-project{
+        width: 70%;
+    }
+    /* >>>>>>> Inicio de Feedbacks <<<<<< */
+
+    .slider {
+        width: 400px;
+        height: 130px;
+    }
+
+    /* >>>>>>>>>>> Contato <<<<<<<<<< */
+
+    .conteiner-contact {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .left-side-contact span {
+        margin-top: 10px;
+    }
+    .left-side-contact img {
+        margin: 50px 0 27px;
+    }
+    .left-side-contact h2{
+        font-size: 1.5rem;
+    }
+    .rigth-side-contact h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .rigth-side-contact input{
+        width: 80%;
+    }
+    .rigth-side-contact textarea{
+        width: 80%;
+    }
+    #submit{
+       margin-left: 118px;
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    /* >>>>>>>>>>> Botao para voltar ao menu <<<<< */
+
+    #btn--up{
+        right: 35px;
+    }
+}
+
+@media (max-width: 425px) and (min-width: 320px)
+{
+    /* Cabecalho */
+    .menu {
+        display: none;
+    }
+
+    /* Home */
+    #home {
+        flex-direction: column;
+    }
+    .left-side,
+    .right-side{
+        margin-top: 30px;
+    }
+    .left-side h1 {
+        text-align: center;
+        width: 100%;
+        font-size: 2.5rem;
+    }
+    .left-side p {
+        text-align: center;
+        width: 90%;
+    }
+    .whatsapp,
+    .projects {
+        width: 130px;
+    }
+    .whatsapp a,
+    .projects a {
+        font-size: 0.8;
+    }
+
+   /* Sobre mim */
+
+    #about-me p {
+        width: 90%;
+    }
+
+    #about-me h2,
+    .skills h2,
+    #projects h2,
+    #feedbacks h2,
+    .left-side-contact h2,
+    .rigth-side-contact h2
+    {
+        font-size: 1.3rem;
+        text-align: center;
+        font-weight: 300;
+    }
+    .icon-skills img {
+        width: 50px ;
+        margin: 10px;
+        padding: 8px;
+    }
+    /* Projetos */
+    
+    .box-project{
+        width: 75%;
+    }
+    /* >>>>>>> Inicio de Feedbacks <<<<<< */
+
+    .slider {
+        width: 270px;
+        height: 100px;
+    }
+
+    /* >>>>>>>>>>> Contato <<<<<<<<<< */
+
+    .conteiner-contact {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .left-side-contact span {
+        margin-top: 10px;
+    }
+    .left-side-contact img {
+        margin: 50px 0 27px;
+    }
+    .rigth-side-contact input{
+        width: 90%;
+    }
+    .rigth-side-contact textarea{
+        width: 90%;
+    }
+    #submit{
+       margin-left: 80px;
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    /* >>>>>>>>>>> Botao para voltar ao menu <<<<< */
+
+    #btn--up{
+        right: 35px;
+    }
 }

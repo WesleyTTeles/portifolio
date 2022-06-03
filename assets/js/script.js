@@ -77,15 +77,14 @@ function scrollToPositionSmooth(to) {
 }
 
 // Menu Responsivel 
-let show = true
+
 const menu = document.querySelector('.menu')
 const menuToggle =document.querySelector('.menu-toggle')
 
 menuToggle.addEventListener('click', () => {
-    menu.classList.toggle('on', show)
-    show = !show;
+    menu.classList.toggle('on')
 })
 
 function closeMenu() {
-    teste = menu.classList.remove('on')
+    menu.classList.remove('on')
 }

@@ -323,20 +323,6 @@ strong {
 .btn-vist img {
     width: 18px;
 }
-
-#feedbacks {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-#feedbacks h2 {
-    font-family: 'Poppins', sans-serif;
-    color: var(--primary-color);
-    font-weight: 400;
-    font-size: 1.5rem;
-    margin: 50px 0;
-}
 .slider {
     display: flex;
     justify-content: center;
@@ -970,7 +956,6 @@ footer span {
     #about-me h2,
     .skills h2,
     #projects h2,
-    #feedbacks h2,
     .left-side-contact h2,
     .rigth-side-contact h2
     {
@@ -1122,7 +1107,6 @@ footer span {
     #about-me h2,
     .skills h2,
     #projects h2,
-    #feedbacks h2,
     .left-side-contact h2,
     .rigth-side-contact h2
     {

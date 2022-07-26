@@ -456,7 +456,7 @@ strong {
 
 #btn--up {
     position: fixed;
-    right: 50px;
+    left: 25px;
     bottom: 20px;
     z-index: 999;
     transition: .5s;

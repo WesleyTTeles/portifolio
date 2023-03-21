@@ -482,8 +482,9 @@ footer span {
     font-size: 0.8rem;
 }
 
-@media (max-width: 978px) and (min-width: 725px)
-{
+
+/* REPSONSIVIDADE */
+@media screen and (max-width: 1024px) {
     /* Cabecalho */
 
     nav ul {
@@ -519,17 +520,12 @@ footer span {
     }
 
    /* Sobre mim */
-
-    #about-me p {
-        width: 90%;
-    }
     .icon-skills img {
         width: 70px ;
         margin: 20px;
         padding: 8px;
     }
     /* Projetos */
-    
     .box-project{
         width: 40%;
     }
@@ -574,8 +570,7 @@ footer span {
     }
 }
 
-@media (max-width: 725px) and (min-width: 600px)
-{
+@media screen and (max-width: 725px) {
     /* Cabecalho */
     nav {
         display: none;
@@ -586,7 +581,7 @@ footer span {
         width: 100%;
         height: 3px;
         margin: 6px auto;
-        background-color: #fff;
+        background-color: var(--arrow-color);
         transition-duration: 0.3s;
     }
     .menu-toggle {
@@ -637,10 +632,6 @@ footer span {
     #home{
         flex-direction: column;
     }
-    .left-side,
-    .right-side{
-        margin-top: 30px;
-    }
     .left-side h1 {
         text-align: center;
         width: 100%;
@@ -648,168 +639,11 @@ footer span {
     }
     .left-side p {
         text-align: center;
-        width: 70%;
-    }
-    .whatsapp,
-    .projects {
-        width: 130px;
-    }
-    .whatsapp a,
-    .projects a {
-        font-size: 0.8;
-    }
-
-   /* Sobre mim */
-
-    #about-me p {
-        width: 90%;
-    }
-    .icon-skills img {
-        width: 70px ;
-        margin: 10px;
-        padding: 8px;
-    }
-    /* Projetos */
-    
-    .box-project{
-        width: 70%;
-    }
-    /* >>>>>>> Inicio de Feedbacks <<<<<< */
-
-    .slider {
-        width: 500px;
-        height: 180px;
-    }
-
-    /* >>>>>>>>>>> Contato <<<<<<<<<< */
-
-    .conteiner-contact {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-    .left-side-contact span {
-        margin-top: 10px;
-    }
-    .left-side-contact img {
-        margin: 50px 0 27px;
-    }
-    .left-side-contact h2{
-        font-size: 1.5rem;
-    }
-    .rigth-side-contact h2 {
-        font-size: 1.5rem;
-        text-align: center;
-    }
-    .rigth-side-contact input{
-        width: 80%;
-    }
-    .rigth-side-contact textarea{
-        width: 80%;
-    }
-    #submit{
-        width: 50%;
-        margin-bottom: 50px;
-    }
-    /* >>>>>>>>>>> Botao para voltar ao menu <<<<< */
-
-    #btn--up{
-        right: 35px;
     }
 }
-
-@media (max-width: 600px) and (min-width: 425px)
-{
-    /* Cabecalho */
-    nav {
-        display: none;
-    }
-    .one,
-    .two,
-    .three {
-        width: 100%;
-        height: 3px;
-        margin: 6px auto;
-        background-color: #fff;
-        transition-duration: 0.3s;
-        
-    }
-    .menu-toggle {
-        width: 40px;
-        height: 30px;
-    }
-    .menu.on{
-        position: absolute;
-        background-color:var(--color-bar);
-        width: 100vw;
-        height: 100vh;
-        z-index: 10;
-        top: 0;
-    }
-    .menu.on nav {
-        display: block;
-    }
-    .menu.on .menu-toggle {
-        position: absolute;
-        right: 50px;
-        top: 20px;
-    }
-    .menu.on .menu-toggle .one {
-        transform: rotate(45deg) translate(7px, 7px);
-    }
-    .menu.on .menu-toggle .two {
-       opacity: 0;
-    }
-    .menu.on .menu-toggle .three {
-        transform: rotate(-45deg) translate(6px, -7px);
-    }
-    .menu.on nav ul {
-        text-align: center;
-        display: block;
-    }
-    .menu.on nav ul a {
-        text-align: center;
-        display: block;
-        transition-duration: 0.3s;
-        color: #fff;
-        font-size: 1.3rem;
-        line-height: 2;
-    }
-    .menu.on nav .dark-mode {
-        margin-left: 70px;
-    }
-
-
-    /* Home */
-    #home {
-        flex-direction: column;
-    }
-    .left-side,
-    .right-side{
-        margin-top: 30px;
-    }
-    .left-side h1 {
-        text-align: center;
-        width: 100%;
-        font-size: 2.6rem;
-    }
-    .left-side p {
-        text-align: center;
-        width: 70%;
-    }
-    .whatsapp,
-    .projects {
-        width: 130px;
-    }
-    .whatsapp a,
-    .projects a {
-        font-size: 0.8;
-    }
+@media screen and (max-width: 425px) {
 
    /* Sobre mim */
-
-    #about-me p {
-        width: 90%;
-    }
     .icon-skills img {
         width: 50px ;
         margin: 10px;
@@ -863,96 +697,8 @@ footer span {
     }
 }
 
-@media (max-width: 425px) and (min-width: 375px)
-{
-    /* Cabecalho */
-    nav {
-        display: none;
-    }
-    .one,
-    .two,
-    .three {
-        width: 100%;
-        height: 3px;
-        margin: 6px auto;
-        background-color: #fff;
-        transition-duration: 0.3s;
-    }
-    .menu-toggle {
-        width: 40px;
-        height: 30px;
-    }
-    .menu.on{
-        position: absolute;
-        background-color:var(--color-bar);
-        width: 100vw;
-        height: 100vh;
-        z-index: 10;
-        top: 0;
-    }
-    .menu.on nav {
-        display: block;
-    }
-    .menu.on .menu-toggle {
-        position: absolute;
-        right: 50px;
-        top: 20px;
-    }
-    .menu.on .menu-toggle .one {
-        transform: rotate(45deg) translate(7px, 7px);
-    }
-    .menu.on .menu-toggle .two {
-       opacity: 0;
-    }
-    .menu.on .menu-toggle .three {
-        transform: rotate(-45deg) translate(6px, -7px);
-    }
-    .menu.on nav ul {
-        text-align: center;
-        display: block;
-    }
-    .menu.on nav ul a {
-        text-align: center;
-        display: block;
-        transition-duration: 0.3s;
-        color: #fff;
-        font-size: 1.3rem;
-        line-height: 2;
-    }
-    .menu.on nav .dark-mode {
-        margin-left: 70px;
-    }
-    /* Home */
-    #home {
-        flex-direction: column;
-    }
-    .left-side,
-    .right-side{
-        margin-top: 30px;
-    }
-    .left-side h1 {
-        text-align: center;
-        width: 100%;
-        font-size: 2.5rem;
-    }
-    .left-side p {
-        text-align: center;
-        width: 90%;
-    }
-    .whatsapp,
-    .projects {
-        width: 130px;
-    }
-    .whatsapp a,
-    .projects a {
-        font-size: 0.8;
-    }
-
+@media (max-width: 425px) and (min-width: 375px) {
    /* Sobre mim */
-
-    #about-me p {
-        width: 90%;
-    }
     #about-me h2,
     .skills h2,
     #projects h2,
@@ -1004,74 +750,12 @@ footer span {
         margin-bottom: 50px;
     }
     /* >>>>>>>>>>> Botao para voltar ao menu <<<<< */
-
     #btn--up{
         right: 35px;
     }
 }
 
-@media (max-width: 375px) and (min-width: 320px)
-{
-    /* Cabecalho */
-    nav {
-        display: none;
-    }
-    .one,
-    .two,
-    .three {
-        width: 100%;
-        height: 3px;
-        margin: 6px auto;
-        background-color: #fff;
-        transition-duration: 0.3s;
-        
-    }
-    .menu-toggle {
-        width: 40px;
-        height: 30px;
-    }
-    .menu.on{
-        position: absolute;
-        background-color:var(--color-bar);
-        width: 100vw;
-        height: 100vh;
-        z-index: 10;
-        top: 0;
-    }
-    .menu.on nav {
-        display: block;
-    }
-    .menu.on .menu-toggle {
-        position: absolute;
-        right: 50px;
-        top: 20px;
-    }
-    .menu.on .menu-toggle .one {
-        transform: rotate(45deg) translate(7px, 7px);
-    }
-    .menu.on .menu-toggle .two {
-       opacity: 0;
-    }
-    .menu.on .menu-toggle .three {
-        transform: rotate(-45deg) translate(6px, -7px);
-    }
-    .menu.on nav ul {
-        text-align: center;
-        display: block;
-    }
-    .menu.on nav ul a {
-        text-align: center;
-        display: block;
-        transition-duration: 0.3s;
-        color: #fff;
-        font-size: 1.3rem;
-        line-height: 2;
-    }
-    .menu.on nav .dark-mode {
-        margin-left: 70px;
-    }
-
-
+@media (max-width: 375px) and (min-width: 320px) {
     /* Home */
     #home {
         flex-direction: column;
@@ -1099,10 +783,6 @@ footer span {
     }
 
    /* Sobre mim */
-
-    #about-me p {
-        width: 90%;
-    }
 
     #about-me h2,
     .skills h2,
